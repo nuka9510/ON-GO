@@ -1,0 +1,4 @@
+﻿@charset "utf-8";
+
+#list{width: 180px; height:900px; overflow-y:scroll; border: 0px; margin: 10px;}
+#exam{width: 70%; height:900px; margin: 10px; border: 0px;}

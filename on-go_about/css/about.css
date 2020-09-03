@@ -1,0 +1,16 @@
+body{font-family: 'Hanna', sans-serif;}
+section{display:block; margin-top:100px; height:600px;}
+
+h1{font-size : 3em; }
+
+h2{font-size : 1em;}
+
+#a1{text-decoration: none;}
+
+#sort_h{padding-top:200px;}
+
+#see_l{float:left;}
+#see_r{float:right;}
+
+#see_farl{margin-left:20px;}
+#see_farr{padding-right:20px;}

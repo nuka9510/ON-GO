@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>on-go_notice_data</title>
+	<link href="css/style2.css" rel="stylesheet" type="text/css">
+	<link href="../on-go_layout/css/on-go_layout.css" rel="stylesheet" type="text/css">
+</head>
+
+ <body>
+	 <div id="wrap">
+		 <div id="headerwrap">
+			 <div id="header">
+				 <a href="../on-go_main/on-go_main.html"><img src="../img/on-go_logo_2_2.png" alt="logo_2.png"></a>
+				 <div id="category">
+				 <ul id="main-menu">
+					 <li><a href="../on-go_about/on-go_about_intro.html">소개</a>
+						 <ul>
+							 <li><a href="../on-go_about/on-go_about_intro.html">about</a></li>
+						 </ul>
+					 </li>
+					 <li><a href="../on-go_exam/on-go_exam_HTML.html">Programming문제</a>
+						<ul>
+							<li><a href="../on-go_exam/on-go_exam_HTML.html">HTML</a></li>
+							<li><a href="../on-go_exam/on-go_exam_CSS.html">CSS</a></li>
+							<li><a href="../on-go_exam/on-go_exam_JAVA.html">JAVA</a></li>
+							<li><a href="../on-go_exam/on-go_exam_JAVAScript.html">JAVAscript</a></li>
+							<li><a href="../on-go_exam/on-go_exam_Python.html">Python</a></li>
+						</ul>
+					 </li>
+					 <li><a href="on-go_notice_data.html">자유게시판</a>
+						 <ul>
+							 <li><a href="on-go_notice_data.html">자료</a></li>
+						 </ul>
+					 </li>
+					 <li><a href="../on-go_q&a/on-go_q&a_ask.html">Q&amp;A</a>
+						 <ul>
+							 <li><a href="../on-go_q&a/on-go_q&a_ask.html">질문</a></li>
+						 </ul>
+					 </li>
+				 </ul>
+				</div>
+			 </div>
+		 </div>
+		
+		 <div id="containerwrap">
+	     	 <div id="mainwrap">
+		 <div class="board_list_wrap">
+	
+            <table class="board_list">
+                <caption>ON-GO 자유게시판</caption>
+		<div class="container">
+		<table class="table table-bordered">
+		<thead>
+			<caption> 글쓰기 </caption>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		</thead>
+		<tbody>
+			<form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+			<tr>
+				<th>제목: </th>
+				<td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
+			</tr>
+			<tr>
+				<th>작성자: </th>
+				<td><input type="text" placeholder="작성자를 입력하세요" class="form-control"/></td>
+			</tr>
+			<tr>
+				<th>내용: </th>
+				<td><textarea cols="25" rows="10" placeholder="내용을 입력하세요. " name="content" class="form-control"></textarea></td>
+			</tr>
+			<tr>
+				<th>첨부파일: </th>
+				<td><form enctype='multipart/form-data'><input type="file" placeholder="파일을 선택하세요. " name="filename" class="form-control"/></td></form>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<input type="button" value="등록" onclick="sendData()" class="pull-right"/>
+				<input type="button" value="돌아가기" class="pull-left" onclick="location.href='on-go_notice_data.html'"/>
+				<!-- <a class="btn btn-default" onclick="sendData()"> 등록 </a>
+				<a class="btn btn-default" type="reset"> reset </a>
+				<a class="btn btn-default" onclick="javascript:location.href='list.jsp'">글 목록으로...</a> -->
+				</td>
+			</tr>
+			</form>
+		</tbody>
+		</table>
+		</div>
+ </body>
+</html>

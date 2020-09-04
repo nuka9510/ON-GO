@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>on-go_notice_data</title>
  	<link href="../on-go_layout/css/on-go_layout.css" rel="stylesheet" type="text/css">
+ 	<link href="css/style.css" rel="stylesheet" type="text/css">
  </head>
 
  <body>
@@ -13,7 +14,7 @@
 				 <a href="../on-go_layout/on-go_layout.html"><img src="../img/on-go_logo_2_2.png" alt="logo_2_2.png"></a>
 				 <div id="category">
 				 <ul id="main-menu">
-					 <li><a href="../on-go_about/on-go_about_intro.html">소개</a>
+					 <li style="border-left:1px solid #000000"><a href="../on-go_about/on-go_about_intro.html">소개</a>
 						 <ul>
 							 <li><a href="../on-go_about/on-go_about_intro.html">ABOUT</a></li>
 							 <li><a href="../on-go_about/on-go_about_pjt1.html">첫번째 프로젝트</a></li>
@@ -47,7 +48,77 @@
 		 <div id="containerwrap">
 			 <div id="mainwrap">
 				 <div id="main">
-					 main
+					<div class="board_list_wrap">	
+						<table class="board_list">
+							<caption>ON-GO 자유게시판</caption>
+							<thead>
+								<tr>
+									<th>번호</th>
+									<th>제목</th>
+									<th>글쓴이</th>
+									<th>작성일</th>
+									<th>조회</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>5</td>
+									<td class="tit">
+										<a href="#">우리의</a>
+									</td>
+									<td>관리자</td>
+									<td>2020-09-03</td>
+									<td>111</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="tit">
+										<a href="#">프로젝트를 위하여</a>
+									</td>
+									<td>관리자</td>
+									<td>2020-09-03</td>
+									<td>222</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="tit">
+										<a href="#">우리의</a>
+									</td>
+									<td>관리자</td>
+									<td>2020-09-03</td>
+									<td>333</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="tit">
+										<a href="#">취업을 위하여</a>
+									</td>
+									<td>관리자</td>
+									<td>2020-09-03</td>
+									<td>222</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="tit">
+										<a href="#">ON-GO 파이팅</a>
+									</td>
+									<td>관리자</td>
+									<td>2020-09-03</td>
+									<td>111</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="paging">
+							<a href="#" class="bt" onclick="alert('아직 구현중입니다.')">첫 페이지</a>
+							<a href="#" class="bt" onclick="alert('아직 구현중입니다.')">이전 페이지</a>
+							<a href="#" class="num on" onclick="alert('아직 구현중입니다.')">1</a>
+							<a href="#" class="num" onclick="alert('아직 구현중입니다.')">2</a>
+							<a href="#" class="num" onclick="alert('아직 구현중입니다.')">3</a>
+							<a href="#" class="bt" onclick="alert('아직 구현중입니다.')">다음 페이지</a>
+							<a href="#" class="bt" onclick="alert('아직 구현중입니다.')">마지막 페이지</a>
+							<a href="on-go_notice_write.html" class="bt2" style="float: right;">글쓰기</a>
+						</div>	
+					</div>
 				 </div>
 			 </div>
 		 </div>

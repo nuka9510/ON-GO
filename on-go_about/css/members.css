@@ -1,0 +1,21 @@
+section div {position: relative; left:0%; top:40%; width:60%; height: 60%; margin: 15vw; z-index:10;}
+
+#first{background: linear-gradient(90deg, #3498db 50%, #ffffff 50%);}
+#second{background: linear-gradient(#3498db 50%, #ffffff 50%);}
+#third{background: linear-gradient(-90deg, #ff7e00 50%, #ffffff 50%);}
+#forth{background: linear-gradient(#ffffff 50%, #ff7e00 50%);}
+
+p {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0; font-size: 6vw;
+	font-family: 'Open Sans', sans-serif; font-weight: 700; text-transform: uppercase; white-space: nowrap;}
+
+#first p, #second p {color: #3498db;}
+#third p, #forth p {color: #ffffff;}
+
+p::before {position: absolute; top: 0; left: 0; content: attr(data-split); overflow: hidden;}
+
+#first p::before {width: 50%; color: #ffffff;}
+#second p::before {height: 50%; color: #ffffff;}
+#third p::before {width: 50%; color: #ff7e00;}
+#forth p::before {height: 50%; color: #ff7e00;}
+
+section{margin-top:-20vh;}
